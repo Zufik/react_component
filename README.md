@@ -7,7 +7,9 @@ Toto je vzdělávací projekt, který vám pomůže procvičit vytváření komp
 4. vytvořte nové komponenty ve složce ```src/components``` a přidejte je do souboru ```App.jsx```.
 # Úkol 1 Profil na sociální síti
 Musíme vytvořit komponentu ```<Profile>```, pomocí které můžeme zobrazit informace o uživateli sociální sítě. Uživatelská data jsou v souboru ```data/user.json```.
+
 ![social-profile](./assets/social-profile.png)
+
 ### Popis komponenty ```<Profile>```
 Komponenta by měla přijmout několik požadavků (props) s informacemi o uživateli:
 - ```user name``` — uživatelské jméno;
@@ -60,7 +62,9 @@ import user from 'path/to/user.json;
 ```
 # Úkol 2 - Sekce statistik
 Vytvořte komponentu ```<Statistics>```, která bude zobrazovat statistiky z předávaných props. Například nahrání do cloudu podle typu souboru, návštěvnost webových stránek uživateli v různých zemích, finanční náklady atd. Statistická data jsou v souboru ```data/data.json```.
+
 ![statistics ](./assets/statistics.jpg)
+
 ### Popis komponenty ```<Statistics>```
 Komponenta musí akceptovat dva props ```title``` and ```stats```, které specifikují titul a objekt statistiky:
 - ```title``` je nepovinné, a pokud neprojde, nemělo by se vykreslit žádné označení názvu ```<h2>```;
@@ -101,7 +105,9 @@ import data from '/path/to/data.json';
 
 # Úkol 3 - Seznam přátel
 Musíme vytvořit komponentu ```<FriendList>```, pomocí které můžeme zobrazovat informace o přátelích uživatele. Informace o přátelích jsou uloženy v souboru ```data/friends.json```.
-[friend-list](./assets/friend-list.jpg)
+
+![friend-list](./assets/friend-list.jpg)
+
 ### Popis komponenty ```<FriendList>```:
 Komponenta musí přijmout jednu prop ```přátel``` – pole objektů přátel.
 
@@ -133,7 +139,9 @@ import friends from 'path/to/friends.json';
 ```
 # Úkol 4 - Historie transakcí
 V osobním účtu internetové banky je nutné vytvořit komponentu transakční historie.
-[transactions](./assets/transactions.jpg)
+
+![transactions](./assets/transactions.jpg)
+
 Data pro seznam jsou k dispozici ve formátu JSON v souboru ```data/transakce.json```. Toto je pole objektů, kde každý objekt popisuje jednu transakci s následujícími vlastnostmi:
 - ```id``` je jedinečný identifikátor transakce;
 - ```type``` — typ transakce;
@@ -171,3 +179,6 @@ import transactions from 'path/to/transactions.json';
 
 <TransactionHistory items={transactions} />;
 ```
+### Author
+This repository was created and maintained by [Oleksii Shevchenko](https://shevchenkool.github.io/portfolio/). Questions, suggestions and feedback can be directed to [email](uzlabini@gmail.com) or [linkedin profile](linkedin.com/in/oleksii-shevchenko-535ab61b8).
+If you have any questions or suggestions, feel free to create an [issue](https://github.com/ShevchenkoOl/phonebook/issues) or submit a [pull request](https://github.com/ShevchenkoOl/phonebook/pulls).
