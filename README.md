@@ -47,7 +47,7 @@ Komponenta by měla vytvořit prvek DOM následující struktury:
 </div>
 ```
 ## Příklad použití:
-```
+```html
 import user from 'path/to/user.json;
 
 <Profile
@@ -92,7 +92,7 @@ Komponenta musí vytvořit prvek DOM následující struktury:
 </section>
 ```
 ## Příklad použití:
-```
+```html
 import data from '/path/to/data.json';
 
 <Statistics title="Upload stats" stats={data} />
@@ -106,7 +106,7 @@ Musíme vytvořit komponentu ```<FriendList>```, pomocí které můžeme zobrazo
 Komponenta musí přijmout jednu prop ```přátel``` – pole objektů přátel.
 
 Komponenta by měla vytvořit DOM následující struktury:
-```
+```html
 <ul class="friend-list">
   <!-- Libovolné množství FriendListItem -->
 </ul>
@@ -126,14 +126,14 @@ Komponenta by měla vytvořit DOM následující struktury:
 </li>
 ```
 ## Příklad použití:
-```
+```html
 import friends from 'path/to/friends.json';
 
 <FriendList friends={friends} />;
 ```
 # Úkol 4 - Historie transakcí
 V osobním účtu internetové banky je nutné vytvořit komponentu transakční historie.
-![transactions](./assets/transactions.jpg)
+[transactions](./assets/transactions.jpg)
 Data pro seznam jsou k dispozici ve formátu JSON v souboru ```data/transakce.json```. Toto je pole objektů, kde každý objekt popisuje jednu transakci s následujícími vlastnostmi:
 - ```id``` je jedinečný identifikátor transakce;
 - ```type``` — typ transakce;
@@ -166,7 +166,7 @@ Je nutné vytvořit komponentu ```<TransactionHistory>```, která přijímá jed
 </table>
 ```
 ## Příklad použití:
-```
+```html
 import transactions from 'path/to/transactions.json';
 
 <TransactionHistory items={transactions} />;
