@@ -1,8 +1,9 @@
 import './App.css'
+import Profile from './Profile.jsx'
 
 const App = () => {
 return (
-  <div>Zde budou přidány vaše nové komponenty</div>
+  <div><Profile/></div>
 )}
 
 export default App
